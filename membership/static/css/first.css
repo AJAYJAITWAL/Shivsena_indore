@@ -1,0 +1,90 @@
+#bcolor {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.text {
+    margin-top: 30px;
+    font-family: 'Rozha One', serif;
+    font-size: 500;
+}
+
+.nameclass {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: -webkit-xxx-large;
+}
+
+.container1 {
+    margin-top: 50PX;
+}
+
+.rt {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+.rt1 {
+    width: 200px;
+    height: 200px;
+}
+
+body {
+    margin: 0px;
+}
+
+.nameclass1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Palanquin Dark', sans-serif;
+    margin-top: 15px;
+}
+
+
+/* bcard css*/
+
+.my-color1 {
+    background-color: white;
+    border: 2px solid black;
+    width: 700px;
+    height: 420px;
+}
+
+.nameclass_1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: -webkit-xxx-large;
+}
+
+.nameclass2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Palanquin Dark', sans-serif;
+    margin-top: 10px;
+}
+
+.choose_file {
+    position: relative;
+    display: inline-block;
+    border-radius: 8px;
+    border: #ebebeb solid 1px;
+    width: 250px;
+    padding: 4px 6px 4px 8px;
+    font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
+    color: #7f7f7f;
+    margin-top: 2px;
+    background: white
+}
+
+.choose_file input[type="file"] {
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#imgsz {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: 10px;
+}

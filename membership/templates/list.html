@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yuva sena</title>
+</head>
+<body bgcolor="#7FFF00">
+<h1>welcome to india </h1>
+{% for sena in sks %}
+        <div class="card-body">
+          <h5>{{sena.f_name}}</h5>
+            <a href="{% url 'detail' sena.id %}" class="btn btn-primary">Go to Card</a>
+
+        </div>
+{% endfor %}
+</body>
+</html>

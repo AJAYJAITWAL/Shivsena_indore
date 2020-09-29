@@ -1,0 +1,198 @@
+{% load static %}
+<!-- <diV>
+     <h1>{{data.f_name}}</h1>-->
+<!--     <h1>{{data.last_name}}</h1>-->
+  <!--   <h1>{{data.ward_no}}</h1>
+     <h1>{{data.location}}</h1>
+     <h1>{{data.assembly}}</h1>
+     <h1>{{data.contact}}</h1>
+     <h1>{{data.email}}</h1>
+     <h1>{{data.dob}}</h1>
+     <h1>{{data.post}}</h1>
+     <h1>{{data.tenure1}}</h1>
+     <h1>{{data.tenure2}}</h1>
+     <h1>{{data.position}}</h1>
+     <h1>{{data.blood_g}}</h1>
+     <h1>{{data.education}}</h1>
+     <h1>{{data.pyear}}</h1>
+     <h1>{{data.occupation}}</h1>
+     <h1>{{data.uidai}}</h1>
+
+ </diV>-->
+
+<html>
+
+<head>
+    <title>card</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/js/first.js'%}">
+    <link rel="stylesheet" href="{% static '/css/first.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap" rel="stylesheet">
+     
+     
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <style>
+    
+body {
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Hind', sans-serif;
+}
+
+#bcolor {
+    background: url('{% static "assets/img/Back Card.jpg" %}');
+   
+    background-repeat: no-repeat;
+    
+    display: block;
+    margin-right: auto;
+   
+    border: 2px solid black;
+    width: 700px;
+    height: 420px;
+}
+
+.box {
+    width: 205vh;
+    height: 680px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.my-color {
+    background: url('{% static "img/Front Card.jpg" %}');
+   
+    background-repeat: no-repeat;
+    
+    display: block;
+    margin-right: auto;
+   
+    border: 2px solid black;
+    width: 700px;
+    height: 420px;
+}
+.nameclassb {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Palanquin Dark', sans-serif;
+    margin-top: 22px;
+}
+    </style>
+</head>
+
+<body>
+
+     <div class="container my-5">
+     
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+    </div>
+   
+
+    <div class="container my-color mt-3">
+   
+        <!-- <div class="d-flex justify-content-between">
+           <img src="{% static '/img/tiger1.jpeg' %}" class="rt float-left" alt="...">
+            <h1 class="text"><b>युवासेना इंदौर</b></h1>
+            <img src="{% static '/img/teer1.jpeg' %}" class="rt float-right" alt="...">
+        </div>
+-->
+
+        <div class="container1">
+        
+            <div class="d-flex bd-highlight mb-3">
+                <div class="mr-auto p-2 bd-highlight">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                    <h1 class="nameclass" ><b>{{data.f_name}}</b></h1>
+                    <h3 class="nameclass1" ><b>{{data.post}}</b></h3>
+                    <h3 class="nameclass1" ><b>{{data.tenure1}}-{{data.tenure2}}</b></h3>
+                    <h3 class="nameclass1" ><b>जन्म :- {{data.dob}}</b></b>
+                    </h3>
+                
+                </div>
+                
+                <div class="d-flex align-items-start flex-column bd-highlight mb-3 " style="height: 200px;">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                    <img src="{{data.photo_main.url}}" class="rt1 float-right" alt="...">
+                   <h5 class="nameclass2"><b>ID - {{data.id_number}}</b></b>
+                    </h5>
+                </div>
+                
+            </div>
+           
+        </div>
+         
+    </div>
+
+    
+     <div class="container my-color1 my-1 " id="bcolor">
+      
+        <div class="d-flex justify-content-between">
+        
+        
+     
+           <!-- <h2><b>जय भवानी</b></h2>
+            <h2><b>जय हिंदूराष्ट्र</b></h2>
+           <h2><b>जय शिवाजी</b></h2>
+ -->       </div>
+
+    
+        
+        <div class="container1 my-5" >
+            <div class="d-flex bd-highlight mb-3" >
+                <div class="mr-auto p-2 bd-highlight">
+                <br> <br><br><br>
+                    <h4 class="nameclassb" ><b>वार्ड नं :-    {{data.ward_no}}</b></h4>
+                    <h4 class="nameclassb"><b>विधानसभा :-   {{data.assembly}}</b></h4>
+                    <h4 class="nameclassb"><b>पता :-   {{data.location}}</b></h4>
+                    
+                </div>
+               
+
+            </div>
+            
+        </div>
+       
+    </div>
+    <!-- <div class="container mt-5 my-color">
+        <div class="d-flex flex-row bd-highlight mb-5">
+            <img src="../images/tiger-logo.jpeg" class="im1" alt="">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <img src="../images/trishool.jpeg" class="im2" alt="...">
+
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item">Lorem ipsum</li>
+            <li class="list-inline-item">Phasellus iaculis</li>
+            <li class="list-inline-item">Nulla volutpat</li>
+        </ul>
+    </div> -->
+
+    
+</body>
+
+</html>

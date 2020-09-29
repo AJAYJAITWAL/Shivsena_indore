@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yuvasena</title>
+    
+    <style>
+    
+    </style>
+
+</head>
+<body bgcolor="#7FFF00">
+<div>
+<center>
+<h1 style="color:	#FF8C00;font-size:50px ;">welcome to shivsena </h1>
+</center></div>
+
+  <div class="container my-5">
+     
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+    </div>
+   <br>
+   <form method="post" enctype="multipart/form-data"> {% csrf_token %}
+                    
+                    <div class="row">              
+                   <table>{{form}}</table>            
+                    </div> 
+                    <h4 >This information is all about you and store in database is very securally and seen only admin!</h4>
+                     <button type="submit" class="btn btn-success pull-right">Create Profile</button>
+                    <div class="clearfix"></div>                        
+                  </form>
+
+</body>
+</html>
